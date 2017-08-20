@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+  <div class="jumbotron text-center">
+    <h1>WELCOME TO MY SITE</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim amet ullam quidem nam debitis, voluptates odit optio eius! Eius dolorum ea vel facere, voluptates cum nihil voluptate delectus. Quod.</p>
+    {% if session.logged_in == NULL%}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg"Register>Login</a>
+    {% endif %}
+  </div>
+{% endblock%}
